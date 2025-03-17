@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Park Extract Fan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="../stylesheets/hvac_style.css">
+</head>
+<body>
+    <div class="about">
+              <section>
+                    <fieldset>
+                        <legend class="sub-title"><h3>Car Park Extract Fan</h3></legend>
+                        <div class="box">   
+                           <div class="text">
+                            <h3>System Overview</h3>
+                                <p>
+                                    The following sets of car park extract fans are located each in the basement level of the blocks A & Band Blocks E & F and are used to extractair from respective zone area based on the CO sensor level and their respective temperature sensor.<br>
+                                </p>
+                                    <ul class="equip-list">
+                                        <li>Car Park Extract Fan EXF-S2 with  CO sensor</li>
+                                    </ul>
+                                <p>    
+                                    The unit is comprised of fixed speed extract Fan. The sequence of operation of the unit shall be as follows:<br>
+                                </p>
+                            <h4>Fan Control</h4>
+                                    <ol class="operation">
+                                        <li>The extract fan shall be operated by the BMS when:</li>
+                                            <ul class="operated-list"> 
+                                                <li class="A"> The HOA switch of the fans is in "Auto" position.</li>
+                                                <li class="A"> The fan trip signal is in NORMAL state.</li>
+                                            </ul>
+                                        <li>Once the above conditions are satisfied, during the occupied period the group of extract fans will enable to start in Auto mode if any of the CO sensor as per above distribution senses CO level in respective area is above than its set point of 100 PPM (adjustable) or the respective temperature sensor reading is greater than the set-point of 30 °C (adjustable). During the unoccupied period the fan will be started only based on CO sensor reading. Operator can also manually start the fan using a plant enable button on the graphics in manual mode.</li>
+                                        <li>Once enabled BMS will automatically send fan start command to extract fan MCC panel. BMS shall monitor the differential pressure airflow switch of the fan.</li>
+                                        <li>If the fan run status from the differential pressure air flow switch is not 'On' within preset time delay of 120 seconds after the start command is being issued then an alarm will be generated and latched on the BMS and the respective extract fan shall be stopped.</li>
+                                        <li>The controls shall be programmed to operate the extract fan for continuous 24 Hours, 7 days a week time schedule.</li>
+                                        <li>The operator can stop the extract fan from the BMS anytime; however, the default state of the extract fan when the DOC is reset or powered up is STOP.</li>
+                                        <li>To do the plant - start/stop, the manual mode check box provided in the graphics should be checked and then the Start/Stop button should be selected to START/STOP option as per requirement. Operator should uncheck the mode checkbox to run the system in Auto mode.</li>
+                                    </ol>
+                            <h4>Alarm Reset</h4>
+                                <p>
+                                    When the extract fan start command is issued by the BMS, then the BMS monitors the.TRIP status of the fan & the RUN status of the fan from the differential pressure switch. In case that if any of the status goes to OFF/ALARM condition, then BMS will generate a FAN FAIL ALARM (point will be displayed on the central graphic). This alarm shall be latched until the operator resets it. The extract fan start/stop command shall be OFF from the BMS until this alarm is reset
+                                </p>
+                            <h4>Plant Reset</h4>
+                                <p>
+                                    If the unit is in "Fail" condition, then the operator can reset this alarm by using the plantreset button available on graphic screen or by putting the respective equipment H/O/A switch status in OFF or HAND mode and bringing it back to AUTO mode from local control panel (This provision is provided to facilitate the operator to reset respective equipment alarms in case graphic communication fails with controllers). To do the Plant -reset, the manual mode check box provided in the graphics should be checked and then the RESET option should be selected. Once the RESET is activated it will come back to NORMAL state automatically after predefined delay time and mode checkbox will be unchecked automatically.
+                                </p>
+                            <h4>Alarms</h4>
+                                <p>
+                                    The following alarms would be generated on BMS.
+                                </p>
+                                <p class="alarms">
+                                    <span style="text-decoration: underline;">Extract Fan Trip:</span>This is generated when the fan motor is tripped as sensed by panel volt free contact.<br>
+                                    The above alarms are active on the BMS irrespective of whether the H/O/A switch is in "Hand" or "Auto central" position.<br>
+                                    <span style="text-decoration: underline;">Extract Fan Fail:</span>In case the extract fan fails to start or if the run status from the differential pressure switch is not giving the signal according to the fan start command (given from the BMS) due to any reason or the fan is giving the trip status then an alarm will be generated.<br>
+                                </p>
+                                
+                            </div>  
+                        </div>
+                    </fieldset>  
+                </section>
+            </div>
+    </div>
+</body>
+</html>

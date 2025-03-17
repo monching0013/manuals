@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVAC_Fan Coil Unit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="../stylesheets/hvac_style.css">
+</head>
+<body>
+    <div class="about">
+              <section>
+                    <fieldset>
+                        <legend class="sub-title"><h3>Fan Coil Unit</h3></legend>
+                        <div class="box">   
+                            <div class="text">
+                            <h3>System Overview</h3>
+                                <p>
+                                    The FCU controllers will be integrated to the Central BMS system via LON bus. <br>
+                                    The fan coil units will be controlled by a dedicated unitary controller, which will be hardwired to return air duct temperature sensor.
+                                </p>
+                            <h4>Temperature Control</h4>
+                                <p>
+                                    The return air temperature sensor installed in the return air duct or void, will relay the measured signal (temperature) to the FCU controller, the FCU controller compares this signal with the set-point. Based on the comparison, the DDC controller generates an analog output to the 2-way floating cooling valve. A Proportional - Integral - Derivative program will determine the percentage of the cooling coil valves opening to achieve the desired condition. The 2-way valve is mounted on the CHW return pipe. When the fan coil unit is off the chilled water 2-way valve will modulate to the full close position.
+                                </p>   
+                            </div>  
+                        </div>
+                    </fieldset>  
+                </section>
+            </div>
+    </div>
+</body>
+</html>
