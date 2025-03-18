@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Party System Interface</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="../stylesheets/hvac_style.css">
+</head>
+<body>
+    <div class="about">
+              <section>
+                    <fieldset>
+                        <legend class="sub-title"><h3>Third Party System Interface</h3></legend>
+                        <div class="box">   
+                           <div class="text">
+                            <h4>Chillers and Primary Chilled Water Pumps</h4>
+                                <p>
+                                    BMS will not have any control on the operation of the chillers and primary chilled water pumps system. Chillers supplying vendor (Carrier) will monitor and control the entire system and will send following information to BMS through MODBUS-RTU over TCP/IP using terminal server (provided by others) for monitoring only.
+                                </p>
+                                    <ul class="equip-list">
+                                        <li>Chiller Enable / Disable Command</li>
+                                        <li>Chillers Hun Status</li>
+                                        <li>Chillers Fault Signal</li>
+                                        <li>Local/CCN/Remote Switch Status</li>
+                                        <li>Chiller Leaving Immersion Temperature Sensor</li>
+                                        <li>Butterfly Valve Open/ Close Status</li>
+                                        <li>Common Chiller Supply Immersion Temperature Sensor</li>
+                                        <li>Pump Start/Stop</li>
+                                        <li>Pump Run Status</li>
+                                        <li>Pump Trip Signal</li>
+                                        <li>Pump Hand/Off/Auto Signal</li>
+                                    </ul> 
+                            <h4>UPS Monitoring</h4>
+                                <p>
+                                    BMS shall be monitoring the following points through MODBUS-RTU over TCP/IP using terminal server (provided by others) for UPS System.
+                                    <ul class="equip-list">
+                                        <li>System Healthy Status</li>
+                                        <li>Common Fault</li>
+                                        <li>Battery Status</li>
+                                    </ul>
+                                </p>
+                            <h4>Generator</h4>
+                                <p>
+                                    BMS shall be monitoring the following points through MODBUS-RTU over TCP/IP using terminal server (provided by others) for Generator System.
+                                    <ul class="equip-list">
+                                        <li>System Healthy Status (Auto Position)</li>
+                                        <li>Run Status</li>
+                                        <li>Common Fault Signal(Shut Down, Warning, Electrical Trip)</li>
+                                        <li>Emergency Stop Status</li>
+                                        <li>Hi Coolant Temp Alarm Signal</li>
+                                        <li>Generator On Test Status</li>
+                                        <li>Battery Status</li>
+                                        <li>Fuel Tank Level</li>
+                                        <li>Voltage/Current/Frequency/Power</li>
+                                    </ul>
+                                </p>
+                            <h4>Lighting Control System</h4>
+                                <p>
+                                    BMS shall be control and monitor the following points (maximum 10 Nos) through MODBUS­ RTU over TCP/IP for Lighting System.
+                                    <ul class="equip-list">
+                                        <li>Panel Start/Stop Command</li>
+                                        <li>Panel Run Status</li>
+                                    </ul>
+                                </p>
+                            </div>  
+                        </div>
+                    </fieldset>  
+                </section>
+            </div>
+    </div>
+</body>
+</html>
